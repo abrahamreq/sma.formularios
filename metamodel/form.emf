@@ -1,0 +1,47 @@
+@namespace(uri="http://sma.form/", prefix="sma.form")
+package form;
+
+class Formulario {
+  val Element[*] hasElement;
+}
+
+class Label extends Element {
+  attr String content;
+  attr String for;
+}
+
+class Editable extends Element {
+  val Label hasLabel;
+  attr boolean disabled;
+  attr String name;
+}
+
+class Input extends Editable {
+  attr boolean checked;
+  attr String type;
+  attr String value;
+}
+
+class SelectionList extends Editable {
+  attr boolean multiple;
+}
+
+class textArea extends Editable {
+  attr String content;
+}
+
+class select extends SelectionList {
+}
+
+class selectComplex extends SelectionList {
+}
+
+class option {
+  attr String content;
+  attr String value;
+  val select hasOption;
+}
+
+class Element {
+}
+
