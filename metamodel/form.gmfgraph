@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="form">
+  <figures name="Default">
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="AristaFigureTargetDecoration"/>
+    <descriptors name="LabelFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="LabelFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="LabelLabelFigure" text="Label"/>
+      </actualFigure>
+      <accessors accessor="getFigureLabelLabelFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="InputFigure">
+      <actualFigure xsi:type="gmfgraph:Ellipse" name="InputFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="InputLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="InputLabelFigure" text="Input"/>
+    </descriptors>
+    <descriptors name="SelectionListFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="SelectionListFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="SelectionListLabelFigure" text="SelectionList">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="SelectionListHasOptionCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureSelectionListLabelFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+      <accessors accessor="getSelectionListHasOptionCompartmentFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="textAreaFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="textAreaFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="textAreaLabelFigure" text="textArea"/>
+      </actualFigure>
+      <accessors accessor="getFiguretextAreaLabelFigure" figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="optionFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="optionFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="optionLabelFigure" text="option"/>
+      </actualFigure>
+      <accessors accessor="getFigureoptionLabelFigure" figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="AristaFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="AristaFigure" lineWidth="2" targetDecoration="//@figures.0/@figures.0"/>
+    </descriptors>
+  </figures>
+  <nodes name="Label" figure="LabelFigure"/>
+  <nodes name="Input" figure="InputFigure"/>
+  <nodes name="SelectionList" figure="SelectionListFigure"/>
+  <nodes name="textArea" figure="textAreaFigure"/>
+  <nodes name="option" figure="optionFigure"/>
+  <connections name="Arista" figure="AristaFigure"/>
+  <compartments name="SelectionListHasOptionCompartment" figure="SelectionListFigure" accessor="//@figures.0/@descriptors.3/@accessors.1"/>
+  <labels name="LabelLabel" figure="LabelFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="InputLabel" figure="InputLabelFigure"/>
+  <labels name="SelectionListLabel" figure="SelectionListFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+  <labels name="textAreaLabel" figure="textAreaFigure" accessor="//@figures.0/@descriptors.4/@accessors.0"/>
+  <labels name="optionLabel" figure="optionFigure" accessor="//@figures.0/@descriptors.5/@accessors.0"/>
+</gmfgraph:Canvas>

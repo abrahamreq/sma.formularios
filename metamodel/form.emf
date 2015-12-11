@@ -1,10 +1,14 @@
+@gmf
 @namespace(uri="http://sma.form/", prefix="sma.form")
 package form;
 
+@gmf.diagram
 class Formulario {
   val Element[*] hasElement;
+  val Arista[*] aristas;
 }
 
+@gmf.node(label="content", figure="rectangle", label.placement="internal")
 class Label extends Element {
   attr String content;
   attr String for;
@@ -16,32 +20,40 @@ class Editable extends Element {
   attr String name;
 }
 
+@gmf.node(label="name", figure="ellipse", label.placement="external")
 class Input extends Editable {
   attr boolean checked;
   attr String type;
   attr String value;
 }
 
+@gmf.node(label="name", figure="rectangle", label.placement="internal")
 class SelectionList extends Editable {
   attr boolean multiple;
+
+  @gmf.compartment(layout="list", collapsible="false")
+  val option[+] hasOption;
 }
 
+@gmf.node(label="content", figure="rectangle", label.placement="internal")
 class textArea extends Editable {
   attr String content;
 }
 
-class select extends SelectionList {
-}
-
-class selectComplex extends SelectionList {
-}
-
+@gmf.node(label="value", figure="rectangle", label.placement="internal")
 class option {
   attr String content;
   attr String value;
-  val select hasOption;
 }
 
-class Element {
+@gmf.link(source="origen", target="destino", style="solid", width="2", target.decoration="arrow")
+class Arista {
+  ref Element[1]#salientes origen;
+  ref Element[1]#entrantes destino;
+}
+
+abstract class Element {
+  ref Arista#origen salientes;
+  ref Arista#destino entrantes;
 }
 
