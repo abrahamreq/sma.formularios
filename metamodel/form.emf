@@ -5,7 +5,7 @@ package form;
 @gmf.diagram
 class Formulario {
   val Element[*] hasElement;
-  val Arista[*] aristas;
+  val Orden[*] orden;
 }
 
 @gmf.node(label="content", figure="rectangle", label.placement="internal")
@@ -47,13 +47,13 @@ class option {
 }
 
 @gmf.link(source="origen", target="destino", style="solid", width="2", target.decoration="arrow")
-class Arista {
+class Orden {
   ref Element[1]#salientes origen;
   ref Element[1]#entrantes destino;
 }
 
 abstract class Element {
-  ref Arista#origen salientes;
-  ref Arista#destino entrantes;
+  ref Orden#origen salientes;
+  ref Orden#destino entrantes;
 }
 

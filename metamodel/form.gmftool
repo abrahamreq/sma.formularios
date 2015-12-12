@@ -62,8 +62,8 @@
         collapsible="true">
       <tools
           xsi:type="gmftool:CreationTool"
-          title="Arista"
-          description="Create new Arista">
+          title="Orden"
+          description="Create new Orden">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon

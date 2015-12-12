@@ -25,7 +25,7 @@ public interface Element extends EObject {
 
 	/**
 	 * Returns the value of the '<em><b>Salientes</b></em>' reference.
-	 * It is bidirectional and its opposite is '{@link form.Arista#getOrigen <em>Origen</em>}'.
+	 * It is bidirectional and its opposite is '{@link form.Orden#getOrigen <em>Origen</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Salientes</em>' reference isn't clear,
@@ -33,13 +33,13 @@ public interface Element extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Salientes</em>' reference.
-	 * @see #setSalientes(Arista)
+	 * @see #setSalientes(Orden)
 	 * @see form.FormPackage#getElement_Salientes()
-	 * @see form.Arista#getOrigen
+	 * @see form.Orden#getOrigen
 	 * @model opposite="origen"
 	 * @generated
 	 */
-	Arista getSalientes();
+	Orden getSalientes();
 
 	/**
 	 * Sets the value of the '{@link form.Element#getSalientes <em>Salientes</em>}' reference.
@@ -49,11 +49,11 @@ public interface Element extends EObject {
 	 * @see #getSalientes()
 	 * @generated
 	 */
-	void setSalientes(Arista value);
+	void setSalientes(Orden value);
 
 	/**
 	 * Returns the value of the '<em><b>Entrantes</b></em>' reference.
-	 * It is bidirectional and its opposite is '{@link form.Arista#getDestino <em>Destino</em>}'.
+	 * It is bidirectional and its opposite is '{@link form.Orden#getDestino <em>Destino</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Entrantes</em>' reference isn't clear,
@@ -61,13 +61,13 @@ public interface Element extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Entrantes</em>' reference.
-	 * @see #setEntrantes(Arista)
+	 * @see #setEntrantes(Orden)
 	 * @see form.FormPackage#getElement_Entrantes()
-	 * @see form.Arista#getDestino
+	 * @see form.Orden#getDestino
 	 * @model opposite="destino"
 	 * @generated
 	 */
-	Arista getEntrantes();
+	Orden getEntrantes();
 
 	/**
 	 * Sets the value of the '{@link form.Element#getEntrantes <em>Entrantes</em>}' reference.
@@ -77,5 +77,5 @@ public interface Element extends EObject {
 	 * @see #getEntrantes()
 	 * @generated
 	 */
-	void setEntrantes(Arista value);
+	void setEntrantes(Orden value);
 } // Element

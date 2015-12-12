@@ -85,13 +85,13 @@ public interface FormFactory extends EFactory {
 	option createoption();
 
 	/**
-	 * Returns a new object of class '<em>Arista</em>'.
+	 * Returns a new object of class '<em>Orden</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Arista</em>'.
+	 * @return a new object of class '<em>Orden</em>'.
 	 * @generated
 	 */
-	Arista createArista();
+	Orden createOrden();
 
 	/**
 	 * Returns the package supported by this factory.

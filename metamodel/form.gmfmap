@@ -115,20 +115,20 @@
   </nodes>
   <links>
     <domainMetaElement
-        href="form.ecore#//Arista"/>
+        href="form.ecore#//Orden"/>
     <containmentFeature
-        href="form.ecore#//Formulario/aristas"/>
+        href="form.ecore#//Formulario/orden"/>
     <tool
         xsi:type="gmftool:CreationTool"
         href="form.gmftool#//@palette/@tools.1/@tools.0"/>
     <diagramLink
-        href="form.gmfgraph#Arista"/>
+        href="form.gmfgraph#Orden"/>
     <sourceMetaFeature
         xsi:type="ecore:EReference"
-        href="form.ecore#//Arista/origen"/>
+        href="form.ecore#//Orden/origen"/>
     <linkMetaFeature
         xsi:type="ecore:EReference"
-        href="form.ecore#//Arista/destino"/>
+        href="form.ecore#//Orden/destino"/>
   </links>
   <diagram>
     <diagramCanvas

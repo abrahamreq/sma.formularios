@@ -75,13 +75,13 @@ public interface FormPackage extends EPackage {
 	int FORMULARIO__HAS_ELEMENT = 0;
 
 	/**
-	 * The feature id for the '<em><b>Aristas</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Orden</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FORMULARIO__ARISTAS = 1;
+	int FORMULARIO__ORDEN = 1;
 
 	/**
 	 * The number of structural features of the '<em>Formulario</em>' class.
@@ -533,14 +533,14 @@ public interface FormPackage extends EPackage {
 
 
 	/**
-	 * The meta object id for the '{@link form.impl.AristaImpl <em>Arista</em>}' class.
+	 * The meta object id for the '{@link form.impl.OrdenImpl <em>Orden</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see form.impl.AristaImpl
-	 * @see form.impl.FormPackageImpl#getArista()
+	 * @see form.impl.OrdenImpl
+	 * @see form.impl.FormPackageImpl#getOrden()
 	 * @generated
 	 */
-	int ARISTA = 7;
+	int ORDEN = 7;
 
 	/**
 	 * The feature id for the '<em><b>Origen</b></em>' reference.
@@ -549,7 +549,7 @@ public interface FormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARISTA__ORIGEN = 0;
+	int ORDEN__ORIGEN = 0;
 
 	/**
 	 * The feature id for the '<em><b>Destino</b></em>' reference.
@@ -558,17 +558,16 @@ public interface FormPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ARISTA__DESTINO = 1;
+	int ORDEN__DESTINO = 1;
 
 	/**
-	 * The number of structural features of the '<em>Arista</em>' class.
+	 * The number of structural features of the '<em>Orden</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ARISTA_FEATURE_COUNT = 2;
-
+	int ORDEN_FEATURE_COUNT = 2;
 
 	/**
 	 * Returns the meta object for class '{@link form.Formulario <em>Formulario</em>}'.
@@ -592,15 +591,15 @@ public interface FormPackage extends EPackage {
 	EReference getFormulario_HasElement();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link form.Formulario#getAristas <em>Aristas</em>}'.
+	 * Returns the meta object for the containment reference list '{@link form.Formulario#getOrden <em>Orden</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Aristas</em>'.
-	 * @see form.Formulario#getAristas()
+	 * @return the meta object for the containment reference list '<em>Orden</em>'.
+	 * @see form.Formulario#getOrden()
 	 * @see #getFormulario()
 	 * @generated
 	 */
-	EReference getFormulario_Aristas();
+	EReference getFormulario_Orden();
 
 	/**
 	 * Returns the meta object for class '{@link form.Label <em>Label</em>}'.
@@ -806,36 +805,36 @@ public interface FormPackage extends EPackage {
 	EAttribute getoption_Value();
 
 	/**
-	 * Returns the meta object for class '{@link form.Arista <em>Arista</em>}'.
+	 * Returns the meta object for class '{@link form.Orden <em>Orden</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Arista</em>'.
-	 * @see form.Arista
+	 * @return the meta object for class '<em>Orden</em>'.
+	 * @see form.Orden
 	 * @generated
 	 */
-	EClass getArista();
+	EClass getOrden();
 
 	/**
-	 * Returns the meta object for the reference '{@link form.Arista#getOrigen <em>Origen</em>}'.
+	 * Returns the meta object for the reference '{@link form.Orden#getOrigen <em>Origen</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Origen</em>'.
-	 * @see form.Arista#getOrigen()
-	 * @see #getArista()
+	 * @see form.Orden#getOrigen()
+	 * @see #getOrden()
 	 * @generated
 	 */
-	EReference getArista_Origen();
+	EReference getOrden_Origen();
 
 	/**
-	 * Returns the meta object for the reference '{@link form.Arista#getDestino <em>Destino</em>}'.
+	 * Returns the meta object for the reference '{@link form.Orden#getDestino <em>Destino</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Destino</em>'.
-	 * @see form.Arista#getDestino()
-	 * @see #getArista()
+	 * @see form.Orden#getDestino()
+	 * @see #getOrden()
 	 * @generated
 	 */
-	EReference getArista_Destino();
+	EReference getOrden_Destino();
 
 	/**
 	 * Returns the meta object for class '{@link form.Element <em>Element</em>}'.
@@ -910,12 +909,12 @@ public interface FormPackage extends EPackage {
 		EReference FORMULARIO__HAS_ELEMENT = eINSTANCE.getFormulario_HasElement();
 
 		/**
-		 * The meta object literal for the '<em><b>Aristas</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Orden</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FORMULARIO__ARISTAS = eINSTANCE.getFormulario_Aristas();
+		EReference FORMULARIO__ORDEN = eINSTANCE.getFormulario_Orden();
 
 		/**
 		 * The meta object literal for the '{@link form.impl.LabelImpl <em>Label</em>}' class.
@@ -1082,14 +1081,14 @@ public interface FormPackage extends EPackage {
 		EAttribute OPTION__VALUE = eINSTANCE.getoption_Value();
 
 		/**
-		 * The meta object literal for the '{@link form.impl.AristaImpl <em>Arista</em>}' class.
+		 * The meta object literal for the '{@link form.impl.OrdenImpl <em>Orden</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see form.impl.AristaImpl
-		 * @see form.impl.FormPackageImpl#getArista()
+		 * @see form.impl.OrdenImpl
+		 * @see form.impl.FormPackageImpl#getOrden()
 		 * @generated
 		 */
-		EClass ARISTA = eINSTANCE.getArista();
+		EClass ORDEN = eINSTANCE.getOrden();
 
 		/**
 		 * The meta object literal for the '<em><b>Origen</b></em>' reference feature.
@@ -1097,7 +1096,7 @@ public interface FormPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ARISTA__ORIGEN = eINSTANCE.getArista_Origen();
+		EReference ORDEN__ORIGEN = eINSTANCE.getOrden_Origen();
 
 		/**
 		 * The meta object literal for the '<em><b>Destino</b></em>' reference feature.
@@ -1105,7 +1104,7 @@ public interface FormPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ARISTA__DESTINO = eINSTANCE.getArista_Destino();
+		EReference ORDEN__DESTINO = eINSTANCE.getOrden_Destino();
 
 		/**
 		 * The meta object literal for the '{@link form.impl.ElementImpl <em>Element</em>}' class.

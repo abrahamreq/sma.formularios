@@ -6,8 +6,8 @@
     <eAnnotations source="gmf.diagram"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasElement" upperBound="-1"
         eType="#//Element" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="aristas" upperBound="-1"
-        eType="#//Arista" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="orden" upperBound="-1"
+        eType="#//Orden" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Label" eSuperTypes="#//Element">
     <eAnnotations source="gmf.node">
@@ -66,7 +66,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="content" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Arista">
+  <eClassifiers xsi:type="ecore:EClass" name="Orden">
     <eAnnotations source="gmf.link">
       <details key="source" value="origen"/>
       <details key="target" value="destino"/>
@@ -80,9 +80,9 @@
         eType="#//Element" eOpposite="#//Element/entrantes"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Element" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="salientes" eType="#//Arista"
-        eOpposite="#//Arista/origen"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="entrantes" eType="#//Arista"
-        eOpposite="#//Arista/destino"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="salientes" eType="#//Orden"
+        eOpposite="#//Orden/origen"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="entrantes" eType="#//Orden"
+        eOpposite="#//Orden/destino"/>
   </eClassifiers>
 </ecore:EPackage>

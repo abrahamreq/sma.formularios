@@ -10,6 +10,7 @@ import form.FormPackage;
 import form.Formulario;
 import form.Input;
 import form.Label;
+import form.Orden;
 import form.SelectionList;
 import form.option;
 import form.select;
@@ -84,7 +85,7 @@ public class FormPackageImpl extends EPackageImpl implements FormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass aristaEClass = null;
+	private EClass ordenEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -177,7 +178,7 @@ public class FormPackageImpl extends EPackageImpl implements FormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFormulario_Aristas() {
+	public EReference getFormulario_Orden() {
 		return (EReference)formularioEClass.getEStructuralFeatures().get(1);
 	}
 
@@ -357,8 +358,8 @@ public class FormPackageImpl extends EPackageImpl implements FormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getArista() {
-		return aristaEClass;
+	public EClass getOrden() {
+		return ordenEClass;
 	}
 
 	/**
@@ -366,8 +367,8 @@ public class FormPackageImpl extends EPackageImpl implements FormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getArista_Origen() {
-		return (EReference)aristaEClass.getEStructuralFeatures().get(0);
+	public EReference getOrden_Origen() {
+		return (EReference)ordenEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -375,8 +376,8 @@ public class FormPackageImpl extends EPackageImpl implements FormPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getArista_Destino() {
-		return (EReference)aristaEClass.getEStructuralFeatures().get(1);
+	public EReference getOrden_Destino() {
+		return (EReference)ordenEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -436,7 +437,7 @@ public class FormPackageImpl extends EPackageImpl implements FormPackage {
 		// Create classes and their features
 		formularioEClass = createEClass(FORMULARIO);
 		createEReference(formularioEClass, FORMULARIO__HAS_ELEMENT);
-		createEReference(formularioEClass, FORMULARIO__ARISTAS);
+		createEReference(formularioEClass, FORMULARIO__ORDEN);
 
 		labelEClass = createEClass(LABEL);
 		createEAttribute(labelEClass, LABEL__CONTENT);
@@ -463,9 +464,9 @@ public class FormPackageImpl extends EPackageImpl implements FormPackage {
 		createEAttribute(optionEClass, OPTION__CONTENT);
 		createEAttribute(optionEClass, OPTION__VALUE);
 
-		aristaEClass = createEClass(ARISTA);
-		createEReference(aristaEClass, ARISTA__ORIGEN);
-		createEReference(aristaEClass, ARISTA__DESTINO);
+		ordenEClass = createEClass(ORDEN);
+		createEReference(ordenEClass, ORDEN__ORIGEN);
+		createEReference(ordenEClass, ORDEN__DESTINO);
 
 		elementEClass = createEClass(ELEMENT);
 		createEReference(elementEClass, ELEMENT__SALIENTES);
@@ -509,7 +510,7 @@ public class FormPackageImpl extends EPackageImpl implements FormPackage {
 		// Initialize classes and features; add operations and parameters
 		initEClass(formularioEClass, Formulario.class, "Formulario", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFormulario_HasElement(), this.getElement(), null, "hasElement", null, 0, -1, Formulario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getFormulario_Aristas(), this.getArista(), null, "aristas", null, 0, -1, Formulario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFormulario_Orden(), this.getOrden(), null, "orden", null, 0, -1, Formulario.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(labelEClass, Label.class, "Label", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getLabel_Content(), ecorePackage.getEString(), "content", null, 0, 1, Label.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -536,13 +537,13 @@ public class FormPackageImpl extends EPackageImpl implements FormPackage {
 		initEAttribute(getoption_Content(), ecorePackage.getEString(), "content", null, 0, 1, option.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getoption_Value(), ecorePackage.getEString(), "value", null, 0, 1, option.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(aristaEClass, Arista.class, "Arista", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getArista_Origen(), this.getElement(), this.getElement_Salientes(), "origen", null, 1, 1, Arista.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getArista_Destino(), this.getElement(), this.getElement_Entrantes(), "destino", null, 1, 1, Arista.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(ordenEClass, Orden.class, "Orden", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getOrden_Origen(), this.getElement(), this.getElement_Salientes(), "origen", null, 1, 1, Orden.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getOrden_Destino(), this.getElement(), this.getElement_Entrantes(), "destino", null, 1, 1, Orden.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(elementEClass, Element.class, "Element", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getElement_Salientes(), this.getArista(), this.getArista_Origen(), "salientes", null, 0, 1, Element.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getElement_Entrantes(), this.getArista(), this.getArista_Destino(), "entrantes", null, 0, 1, Element.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getElement_Salientes(), this.getOrden(), this.getOrden_Origen(), "salientes", null, 0, 1, Element.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getElement_Entrantes(), this.getOrden(), this.getOrden_Destino(), "entrantes", null, 0, 1, Element.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
@@ -666,7 +667,7 @@ public class FormPackageImpl extends EPackageImpl implements FormPackage {
 	protected void createGmf_4Annotations() {
 		String source = "gmf.link";	
 		addAnnotation
-		  (aristaEClass, 
+		  (ordenEClass, 
 		   source, 
 		   new String[] {
 			 "source", "origen",

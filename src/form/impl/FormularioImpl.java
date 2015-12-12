@@ -7,6 +7,7 @@ import form.Element;
 import form.FormPackage;
 import form.Formulario;
 
+import form.Orden;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -29,7 +30,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * <ul>
  *   <li>{@link form.impl.FormularioImpl#getHasElement <em>Has Element</em>}</li>
- *   <li>{@link form.impl.FormularioImpl#getAristas <em>Aristas</em>}</li>
+ *   <li>{@link form.impl.FormularioImpl#getOrden <em>Orden</em>}</li>
  * </ul>
  * </p>
  *
@@ -47,14 +48,14 @@ public class FormularioImpl extends EObjectImpl implements Formulario {
 	protected EList<Element> hasElement;
 
 	/**
-	 * The cached value of the '{@link #getAristas() <em>Aristas</em>}' containment reference list.
+	 * The cached value of the '{@link #getOrden() <em>Orden</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAristas()
+	 * @see #getOrden()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Arista> aristas;
+	protected EList<Orden> orden;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,11 +93,11 @@ public class FormularioImpl extends EObjectImpl implements Formulario {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Arista> getAristas() {
-		if (aristas == null) {
-			aristas = new EObjectContainmentEList<Arista>(Arista.class, this, FormPackage.FORMULARIO__ARISTAS);
+	public EList<Orden> getOrden() {
+		if (orden == null) {
+			orden = new EObjectContainmentEList<Orden>(Orden.class, this, FormPackage.FORMULARIO__ORDEN);
 		}
-		return aristas;
+		return orden;
 	}
 
 	/**
@@ -109,8 +110,8 @@ public class FormularioImpl extends EObjectImpl implements Formulario {
 		switch (featureID) {
 			case FormPackage.FORMULARIO__HAS_ELEMENT:
 				return ((InternalEList<?>)getHasElement()).basicRemove(otherEnd, msgs);
-			case FormPackage.FORMULARIO__ARISTAS:
-				return ((InternalEList<?>)getAristas()).basicRemove(otherEnd, msgs);
+			case FormPackage.FORMULARIO__ORDEN:
+				return ((InternalEList<?>)getOrden()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -125,8 +126,8 @@ public class FormularioImpl extends EObjectImpl implements Formulario {
 		switch (featureID) {
 			case FormPackage.FORMULARIO__HAS_ELEMENT:
 				return getHasElement();
-			case FormPackage.FORMULARIO__ARISTAS:
-				return getAristas();
+			case FormPackage.FORMULARIO__ORDEN:
+				return getOrden();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -144,9 +145,9 @@ public class FormularioImpl extends EObjectImpl implements Formulario {
 				getHasElement().clear();
 				getHasElement().addAll((Collection<? extends Element>)newValue);
 				return;
-			case FormPackage.FORMULARIO__ARISTAS:
-				getAristas().clear();
-				getAristas().addAll((Collection<? extends Arista>)newValue);
+			case FormPackage.FORMULARIO__ORDEN:
+				getOrden().clear();
+				getOrden().addAll((Collection<? extends Orden>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -163,8 +164,8 @@ public class FormularioImpl extends EObjectImpl implements Formulario {
 			case FormPackage.FORMULARIO__HAS_ELEMENT:
 				getHasElement().clear();
 				return;
-			case FormPackage.FORMULARIO__ARISTAS:
-				getAristas().clear();
+			case FormPackage.FORMULARIO__ORDEN:
+				getOrden().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -180,8 +181,8 @@ public class FormularioImpl extends EObjectImpl implements Formulario {
 		switch (featureID) {
 			case FormPackage.FORMULARIO__HAS_ELEMENT:
 				return hasElement != null && !hasElement.isEmpty();
-			case FormPackage.FORMULARIO__ARISTAS:
-				return aristas != null && !aristas.isEmpty();
+			case FormPackage.FORMULARIO__ORDEN:
+				return orden != null && !orden.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

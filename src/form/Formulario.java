@@ -15,7 +15,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * <ul>
  *   <li>{@link form.Formulario#getHasElement <em>Has Element</em>}</li>
- *   <li>{@link form.Formulario#getAristas <em>Aristas</em>}</li>
+ *   <li>{@link form.Formulario#getOrden <em>Orden</em>}</li>
  * </ul>
  * </p>
  *
@@ -41,19 +41,19 @@ public interface Formulario extends EObject {
 	EList<Element> getHasElement();
 
 	/**
-	 * Returns the value of the '<em><b>Aristas</b></em>' containment reference list.
-	 * The list contents are of type {@link form.Arista}.
+	 * Returns the value of the '<em><b>Orden</b></em>' containment reference list.
+	 * The list contents are of type {@link form.Orden}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Aristas</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Orden</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Aristas</em>' containment reference list.
-	 * @see form.FormPackage#getFormulario_Aristas()
+	 * @return the value of the '<em>Orden</em>' containment reference list.
+	 * @see form.FormPackage#getFormulario_Orden()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<Arista> getAristas();
+	EList<Orden> getOrden();
 
 } // Formulario

@@ -96,8 +96,8 @@ public class FormAdapterFactory extends AdapterFactoryImpl {
 				return createoptionAdapter();
 			}
 			@Override
-			public Adapter caseArista(Arista object) {
-				return createAristaAdapter();
+			public Adapter caseOrden(Orden object) {
+				return createOrdenAdapter();
 			}
 			@Override
 			public Adapter caseElement(Element object) {
@@ -222,16 +222,16 @@ public class FormAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link form.Arista <em>Arista</em>}'.
+	 * Creates a new adapter for an object of class '{@link form.Orden <em>Orden</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see form.Arista
+	 * @see form.Orden
 	 * @generated
 	 */
-	public Adapter createAristaAdapter() {
+	public Adapter createOrdenAdapter() {
 		return null;
 	}
 

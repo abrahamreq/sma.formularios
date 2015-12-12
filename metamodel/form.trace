@@ -42,6 +42,6 @@
         queryText="true"/>
   </childNodeTraces>
   <linkTraces
-      visualID="4001"
-      queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://sma.form/' and _eClass_.name = 'Arista')"/>
+      visualID="4002"
+      queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://sma.form/' and _eClass_.name = 'Orden')"/>
 </trace:TraceModel>

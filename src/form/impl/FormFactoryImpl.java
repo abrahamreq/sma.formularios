@@ -63,7 +63,7 @@ public class FormFactoryImpl extends EFactoryImpl implements FormFactory {
 			case FormPackage.SELECTION_LIST: return createSelectionList();
 			case FormPackage.TEXT_AREA: return createtextArea();
 			case FormPackage.OPTION: return createoption();
-			case FormPackage.ARISTA: return createArista();
+			case FormPackage.ORDEN: return createOrden();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -144,9 +144,9 @@ public class FormFactoryImpl extends EFactoryImpl implements FormFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Arista createArista() {
-		AristaImpl arista = new AristaImpl();
-		return arista;
+	public Orden createOrden() {
+		OrdenImpl orden = new OrdenImpl();
+		return orden;
 	}
 
 	/**

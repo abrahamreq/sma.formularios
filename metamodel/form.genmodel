@@ -7,7 +7,7 @@
   <genPackages prefix="Form" disposableProviderFactory="true" ecorePackage="form.ecore#/">
     <genClasses ecoreClass="form.ecore#//Formulario">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference form.ecore#//Formulario/hasElement"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference form.ecore#//Formulario/aristas"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference form.ecore#//Formulario/orden"/>
     </genClasses>
     <genClasses ecoreClass="form.ecore#//Label">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute form.ecore#//Label/content"/>
@@ -34,9 +34,9 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute form.ecore#//option/content"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute form.ecore#//option/value"/>
     </genClasses>
-    <genClasses ecoreClass="form.ecore#//Arista">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference form.ecore#//Arista/origen"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference form.ecore#//Arista/destino"/>
+    <genClasses ecoreClass="form.ecore#//Orden">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference form.ecore#//Orden/origen"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference form.ecore#//Orden/destino"/>
     </genClasses>
     <genClasses image="false" ecoreClass="form.ecore#//Element">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference form.ecore#//Element/salientes"/>

@@ -93,16 +93,16 @@
         </modelFacet>
       </labels>
     </topLevelNodes>
-    <links visualID="4001" editPartClassName="AristaEditPart" itemSemanticEditPolicyClassName="AristaItemSemanticEditPolicy" createCommandClassName="AristaCreateCommand" reorientCommandClassName="AristaReorientCommand">
+    <links visualID="4002" editPartClassName="OrdenEditPart" itemSemanticEditPolicyClassName="OrdenItemSemanticEditPolicy" createCommandClassName="OrdenCreateCommand" reorientCommandClassName="OrdenReorientCommand">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
-      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="AristaEditHelper"/>
-      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="AristaFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AristaFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AristaFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;&#xA;&#x9;&#x9;setTargetDecoration(createTargetDecoration());&#xA;&#x9;}&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RotatableDecoration createTargetDecoration() {&#xA;&#x9;&#x9;org.eclipse.draw2d.PolylineDecoration df = new org.eclipse.draw2d.PolylineDecoration();&#xA;&#x9;&#x9;return df;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="OrdenEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="OrdenFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class OrdenFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public OrdenFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;&#xA;&#x9;&#x9;setTargetDecoration(createTargetDecoration());&#xA;&#x9;}&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.RotatableDecoration createTargetDecoration() {&#xA;&#x9;&#x9;org.eclipse.draw2d.PolylineDecoration df = new org.eclipse.draw2d.PolylineDecoration();&#xA;&#x9;&#x9;return df;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
       <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
-        <metaClass href="form.genmodel#//form/Arista"/>
-        <containmentMetaFeature href="form.genmodel#//form/Formulario/aristas"/>
-        <childMetaFeature href="form.genmodel#//form/Formulario/aristas"/>
-        <sourceMetaFeature href="form.genmodel#//form/Arista/origen"/>
-        <targetMetaFeature href="form.genmodel#//form/Arista/destino"/>
+        <metaClass href="form.genmodel#//form/Orden"/>
+        <containmentMetaFeature href="form.genmodel#//form/Formulario/orden"/>
+        <childMetaFeature href="form.genmodel#//form/Formulario/orden"/>
+        <sourceMetaFeature href="form.genmodel#//form/Orden/origen"/>
+        <targetMetaFeature href="form.genmodel#//form/Orden/destino"/>
       </modelFacet>
     </links>
     <compartments visualID="7001" editPartClassName="SelectionListSelectionListHasOptionCompartmentEditPart" itemSemanticEditPolicyClassName="SelectionListSelectionListHasOptionCompartmentItemSemanticEditPolicy" canonicalEditPolicyClassName="SelectionListSelectionListHasOptionCompartmentCanonicalEditPolicy" childNodes="//@diagram/@childNodes.0" title="SelectionListHasOptionCompartment" canCollapse="false" needsTitle="false" node="//@diagram/@topLevelNodes.1">
@@ -118,7 +118,7 @@
         <entries xsi:type="gmfgen:ToolEntry" title="textArea" description="Create new textArea" genNodes="//@diagram/@topLevelNodes.2"/>
       </groups>
       <groups title="Connections" collapse="true">
-        <entries xsi:type="gmfgen:ToolEntry" title="Arista" description="Create new Arista" genLinks="//@diagram/@links.0"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Orden" description="Create new Orden" genLinks="//@diagram/@links.0"/>
       </groups>
     </palette>
     <preferencePages xsi:type="gmfgen:GenStandardPreferencePage" iD="sma.formularios.diagram.general" name="Form Diagram">

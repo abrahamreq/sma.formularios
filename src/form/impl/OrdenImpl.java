@@ -2,13 +2,13 @@
  */
 package form.impl;
 
-import form.Arista;
 import form.Element;
 import form.FormPackage;
+import form.Orden;
 
 import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.common.notify.NotificationChain;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
@@ -17,19 +17,19 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Arista</b></em>'.
+ * An implementation of the model object '<em><b>Orden</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link form.impl.AristaImpl#getOrigen <em>Origen</em>}</li>
- *   <li>{@link form.impl.AristaImpl#getDestino <em>Destino</em>}</li>
+ *   <li>{@link form.impl.OrdenImpl#getOrigen <em>Origen</em>}</li>
+ *   <li>{@link form.impl.OrdenImpl#getDestino <em>Destino</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class AristaImpl extends EObjectImpl implements Arista {
+public class OrdenImpl extends EObjectImpl implements Orden {
 	/**
 	 * The cached value of the '{@link #getOrigen() <em>Origen</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -55,7 +55,7 @@ public class AristaImpl extends EObjectImpl implements Arista {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected AristaImpl() {
+	protected OrdenImpl() {
 		super();
 	}
 
@@ -66,7 +66,7 @@ public class AristaImpl extends EObjectImpl implements Arista {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return FormPackage.Literals.ARISTA;
+		return FormPackage.Literals.ORDEN;
 	}
 
 	/**
@@ -80,7 +80,7 @@ public class AristaImpl extends EObjectImpl implements Arista {
 			origen = (Element)eResolveProxy(oldOrigen);
 			if (origen != oldOrigen) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FormPackage.ARISTA__ORIGEN, oldOrigen, origen));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FormPackage.ORDEN__ORIGEN, oldOrigen, origen));
 			}
 		}
 		return origen;
@@ -104,7 +104,7 @@ public class AristaImpl extends EObjectImpl implements Arista {
 		Element oldOrigen = origen;
 		origen = newOrigen;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FormPackage.ARISTA__ORIGEN, oldOrigen, newOrigen);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FormPackage.ORDEN__ORIGEN, oldOrigen, newOrigen);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -126,7 +126,7 @@ public class AristaImpl extends EObjectImpl implements Arista {
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FormPackage.ARISTA__ORIGEN, newOrigen, newOrigen));
+			eNotify(new ENotificationImpl(this, Notification.SET, FormPackage.ORDEN__ORIGEN, newOrigen, newOrigen));
 	}
 
 	/**
@@ -140,7 +140,7 @@ public class AristaImpl extends EObjectImpl implements Arista {
 			destino = (Element)eResolveProxy(oldDestino);
 			if (destino != oldDestino) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FormPackage.ARISTA__DESTINO, oldDestino, destino));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FormPackage.ORDEN__DESTINO, oldDestino, destino));
 			}
 		}
 		return destino;
@@ -164,7 +164,7 @@ public class AristaImpl extends EObjectImpl implements Arista {
 		Element oldDestino = destino;
 		destino = newDestino;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FormPackage.ARISTA__DESTINO, oldDestino, newDestino);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FormPackage.ORDEN__DESTINO, oldDestino, newDestino);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -186,7 +186,7 @@ public class AristaImpl extends EObjectImpl implements Arista {
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, FormPackage.ARISTA__DESTINO, newDestino, newDestino));
+			eNotify(new ENotificationImpl(this, Notification.SET, FormPackage.ORDEN__DESTINO, newDestino, newDestino));
 	}
 
 	/**
@@ -197,11 +197,11 @@ public class AristaImpl extends EObjectImpl implements Arista {
 	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FormPackage.ARISTA__ORIGEN:
+			case FormPackage.ORDEN__ORIGEN:
 				if (origen != null)
 					msgs = ((InternalEObject)origen).eInverseRemove(this, FormPackage.ELEMENT__SALIENTES, Element.class, msgs);
 				return basicSetOrigen((Element)otherEnd, msgs);
-			case FormPackage.ARISTA__DESTINO:
+			case FormPackage.ORDEN__DESTINO:
 				if (destino != null)
 					msgs = ((InternalEObject)destino).eInverseRemove(this, FormPackage.ELEMENT__ENTRANTES, Element.class, msgs);
 				return basicSetDestino((Element)otherEnd, msgs);
@@ -217,9 +217,9 @@ public class AristaImpl extends EObjectImpl implements Arista {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case FormPackage.ARISTA__ORIGEN:
+			case FormPackage.ORDEN__ORIGEN:
 				return basicSetOrigen(null, msgs);
-			case FormPackage.ARISTA__DESTINO:
+			case FormPackage.ORDEN__DESTINO:
 				return basicSetDestino(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -233,10 +233,10 @@ public class AristaImpl extends EObjectImpl implements Arista {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case FormPackage.ARISTA__ORIGEN:
+			case FormPackage.ORDEN__ORIGEN:
 				if (resolve) return getOrigen();
 				return basicGetOrigen();
-			case FormPackage.ARISTA__DESTINO:
+			case FormPackage.ORDEN__DESTINO:
 				if (resolve) return getDestino();
 				return basicGetDestino();
 		}
@@ -251,10 +251,10 @@ public class AristaImpl extends EObjectImpl implements Arista {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case FormPackage.ARISTA__ORIGEN:
+			case FormPackage.ORDEN__ORIGEN:
 				setOrigen((Element)newValue);
 				return;
-			case FormPackage.ARISTA__DESTINO:
+			case FormPackage.ORDEN__DESTINO:
 				setDestino((Element)newValue);
 				return;
 		}
@@ -269,10 +269,10 @@ public class AristaImpl extends EObjectImpl implements Arista {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case FormPackage.ARISTA__ORIGEN:
+			case FormPackage.ORDEN__ORIGEN:
 				setOrigen((Element)null);
 				return;
-			case FormPackage.ARISTA__DESTINO:
+			case FormPackage.ORDEN__DESTINO:
 				setDestino((Element)null);
 				return;
 		}
@@ -287,12 +287,12 @@ public class AristaImpl extends EObjectImpl implements Arista {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case FormPackage.ARISTA__ORIGEN:
+			case FormPackage.ORDEN__ORIGEN:
 				return origen != null;
-			case FormPackage.ARISTA__DESTINO:
+			case FormPackage.ORDEN__DESTINO:
 				return destino != null;
 		}
 		return super.eIsSet(featureID);
 	}
 
-} //AristaImpl
+} //OrdenImpl

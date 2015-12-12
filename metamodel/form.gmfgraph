@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ASCII"?>
 <gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="form">
   <figures name="Default">
-    <figures xsi:type="gmfgraph:PolylineDecoration" name="AristaFigureTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="OrdenFigureTargetDecoration"/>
     <descriptors name="LabelFigure">
       <actualFigure xsi:type="gmfgraph:Rectangle" name="LabelFigure">
         <border xsi:type="gmfgraph:MarginBorder">
@@ -52,8 +52,8 @@
       </actualFigure>
       <accessors accessor="getFigureoptionLabelFigure" figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
     </descriptors>
-    <descriptors name="AristaFigure">
-      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="AristaFigure" lineWidth="2" targetDecoration="//@figures.0/@figures.0"/>
+    <descriptors name="OrdenFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="OrdenFigure" lineWidth="2" targetDecoration="//@figures.0/@figures.0"/>
     </descriptors>
   </figures>
   <nodes name="Label" figure="LabelFigure"/>
@@ -61,7 +61,7 @@
   <nodes name="SelectionList" figure="SelectionListFigure"/>
   <nodes name="textArea" figure="textAreaFigure"/>
   <nodes name="option" figure="optionFigure"/>
-  <connections name="Arista" figure="AristaFigure"/>
+  <connections name="Orden" figure="OrdenFigure"/>
   <compartments name="SelectionListHasOptionCompartment" figure="SelectionListFigure" accessor="//@figures.0/@descriptors.3/@accessors.1"/>
   <labels name="LabelLabel" figure="LabelFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
   <labels name="InputLabel" figure="InputLabelFigure"/>

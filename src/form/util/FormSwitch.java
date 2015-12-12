@@ -116,9 +116,9 @@ public class FormSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case FormPackage.ARISTA: {
-				Arista arista = (Arista)theEObject;
-				T result = caseArista(arista);
+			case FormPackage.ORDEN: {
+				Orden orden = (Orden)theEObject;
+				T result = caseOrden(orden);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -238,17 +238,17 @@ public class FormSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Arista</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Orden</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Arista</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Orden</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseArista(Arista object) {
+	public T caseOrden(Orden object) {
 		return null;
 	}
 

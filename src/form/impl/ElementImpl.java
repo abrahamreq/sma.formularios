@@ -6,6 +6,7 @@ import form.Arista;
 import form.Element;
 import form.FormPackage;
 
+import form.Orden;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.ecore.EClass;
@@ -37,7 +38,7 @@ public abstract class ElementImpl extends EObjectImpl implements Element {
 	 * @generated
 	 * @ordered
 	 */
-	protected Arista salientes;
+	protected Orden salientes;
 	/**
 	 * The cached value of the '{@link #getEntrantes() <em>Entrantes</em>}' reference.
 	 * <!-- begin-user-doc -->
@@ -46,7 +47,7 @@ public abstract class ElementImpl extends EObjectImpl implements Element {
 	 * @generated
 	 * @ordered
 	 */
-	protected Arista entrantes;
+	protected Orden entrantes;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -72,10 +73,10 @@ public abstract class ElementImpl extends EObjectImpl implements Element {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Arista getSalientes() {
+	public Orden getSalientes() {
 		if (salientes != null && salientes.eIsProxy()) {
 			InternalEObject oldSalientes = (InternalEObject)salientes;
-			salientes = (Arista)eResolveProxy(oldSalientes);
+			salientes = (Orden)eResolveProxy(oldSalientes);
 			if (salientes != oldSalientes) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FormPackage.ELEMENT__SALIENTES, oldSalientes, salientes));
@@ -89,7 +90,7 @@ public abstract class ElementImpl extends EObjectImpl implements Element {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Arista basicGetSalientes() {
+	public Orden basicGetSalientes() {
 		return salientes;
 	}
 
@@ -98,8 +99,8 @@ public abstract class ElementImpl extends EObjectImpl implements Element {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetSalientes(Arista newSalientes, NotificationChain msgs) {
-		Arista oldSalientes = salientes;
+	public NotificationChain basicSetSalientes(Orden newSalientes, NotificationChain msgs) {
+		Orden oldSalientes = salientes;
 		salientes = newSalientes;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FormPackage.ELEMENT__SALIENTES, oldSalientes, newSalientes);
@@ -113,13 +114,13 @@ public abstract class ElementImpl extends EObjectImpl implements Element {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setSalientes(Arista newSalientes) {
+	public void setSalientes(Orden newSalientes) {
 		if (newSalientes != salientes) {
 			NotificationChain msgs = null;
 			if (salientes != null)
-				msgs = ((InternalEObject)salientes).eInverseRemove(this, FormPackage.ARISTA__ORIGEN, Arista.class, msgs);
+				msgs = ((InternalEObject)salientes).eInverseRemove(this, FormPackage.ORDEN__ORIGEN, Orden.class, msgs);
 			if (newSalientes != null)
-				msgs = ((InternalEObject)newSalientes).eInverseAdd(this, FormPackage.ARISTA__ORIGEN, Arista.class, msgs);
+				msgs = ((InternalEObject)newSalientes).eInverseAdd(this, FormPackage.ORDEN__ORIGEN, Orden.class, msgs);
 			msgs = basicSetSalientes(newSalientes, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
@@ -132,10 +133,10 @@ public abstract class ElementImpl extends EObjectImpl implements Element {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Arista getEntrantes() {
+	public Orden getEntrantes() {
 		if (entrantes != null && entrantes.eIsProxy()) {
 			InternalEObject oldEntrantes = (InternalEObject)entrantes;
-			entrantes = (Arista)eResolveProxy(oldEntrantes);
+			entrantes = (Orden)eResolveProxy(oldEntrantes);
 			if (entrantes != oldEntrantes) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, FormPackage.ELEMENT__ENTRANTES, oldEntrantes, entrantes));
@@ -149,7 +150,7 @@ public abstract class ElementImpl extends EObjectImpl implements Element {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Arista basicGetEntrantes() {
+	public Orden basicGetEntrantes() {
 		return entrantes;
 	}
 
@@ -158,8 +159,8 @@ public abstract class ElementImpl extends EObjectImpl implements Element {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NotificationChain basicSetEntrantes(Arista newEntrantes, NotificationChain msgs) {
-		Arista oldEntrantes = entrantes;
+	public NotificationChain basicSetEntrantes(Orden newEntrantes, NotificationChain msgs) {
+		Orden oldEntrantes = entrantes;
 		entrantes = newEntrantes;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, FormPackage.ELEMENT__ENTRANTES, oldEntrantes, newEntrantes);
@@ -173,13 +174,13 @@ public abstract class ElementImpl extends EObjectImpl implements Element {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEntrantes(Arista newEntrantes) {
+	public void setEntrantes(Orden newEntrantes) {
 		if (newEntrantes != entrantes) {
 			NotificationChain msgs = null;
 			if (entrantes != null)
-				msgs = ((InternalEObject)entrantes).eInverseRemove(this, FormPackage.ARISTA__DESTINO, Arista.class, msgs);
+				msgs = ((InternalEObject)entrantes).eInverseRemove(this, FormPackage.ORDEN__DESTINO, Orden.class, msgs);
 			if (newEntrantes != null)
-				msgs = ((InternalEObject)newEntrantes).eInverseAdd(this, FormPackage.ARISTA__DESTINO, Arista.class, msgs);
+				msgs = ((InternalEObject)newEntrantes).eInverseAdd(this, FormPackage.ORDEN__DESTINO, Orden.class, msgs);
 			msgs = basicSetEntrantes(newEntrantes, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
@@ -197,12 +198,12 @@ public abstract class ElementImpl extends EObjectImpl implements Element {
 		switch (featureID) {
 			case FormPackage.ELEMENT__SALIENTES:
 				if (salientes != null)
-					msgs = ((InternalEObject)salientes).eInverseRemove(this, FormPackage.ARISTA__ORIGEN, Arista.class, msgs);
-				return basicSetSalientes((Arista)otherEnd, msgs);
+					msgs = ((InternalEObject)salientes).eInverseRemove(this, FormPackage.ORDEN__ORIGEN, Orden.class, msgs);
+				return basicSetSalientes((Orden)otherEnd, msgs);
 			case FormPackage.ELEMENT__ENTRANTES:
 				if (entrantes != null)
-					msgs = ((InternalEObject)entrantes).eInverseRemove(this, FormPackage.ARISTA__DESTINO, Arista.class, msgs);
-				return basicSetEntrantes((Arista)otherEnd, msgs);
+					msgs = ((InternalEObject)entrantes).eInverseRemove(this, FormPackage.ORDEN__DESTINO, Orden.class, msgs);
+				return basicSetEntrantes((Orden)otherEnd, msgs);
 		}
 		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
@@ -250,10 +251,10 @@ public abstract class ElementImpl extends EObjectImpl implements Element {
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case FormPackage.ELEMENT__SALIENTES:
-				setSalientes((Arista)newValue);
+				setSalientes((Orden)newValue);
 				return;
 			case FormPackage.ELEMENT__ENTRANTES:
-				setEntrantes((Arista)newValue);
+				setEntrantes((Orden)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -268,10 +269,10 @@ public abstract class ElementImpl extends EObjectImpl implements Element {
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case FormPackage.ELEMENT__SALIENTES:
-				setSalientes((Arista)null);
+				setSalientes((Orden)null);
 				return;
 			case FormPackage.ELEMENT__ENTRANTES:
-				setEntrantes((Arista)null);
+				setEntrantes((Orden)null);
 				return;
 		}
 		super.eUnset(featureID);
