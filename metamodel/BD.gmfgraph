@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="BD">
+  <figures name="Default">
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ClaveAjenaFigureTargetDecoration"/>
+    <descriptors name="TablaFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="TablaFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="TablaLabelFigure" text="Tabla">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="TablaColumnasCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureTablaLabelFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+      <accessors accessor="getTablaColumnasCompartmentFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="ColumnaFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="ColumnaFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="ColumnaLabelFigure" text="Columna"/>
+      </actualFigure>
+      <accessors accessor="getFigureColumnaLabelFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ClaveAjenaFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ClaveAjenaFigure" lineWidth="2" targetDecoration="//@figures.0/@figures.0"/>
+    </descriptors>
+  </figures>
+  <nodes name="Tabla" figure="TablaFigure"/>
+  <nodes name="Columna" figure="ColumnaFigure"/>
+  <connections name="ClaveAjena" figure="ClaveAjenaFigure"/>
+  <compartments name="TablaColumnasCompartment" figure="TablaFigure" accessor="//@figures.0/@descriptors.0/@accessors.1"/>
+  <labels name="TablaLabel" figure="TablaFigure" elementIcon="false" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="ColumnaLabel" figure="ColumnaFigure" elementIcon="false" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+</gmfgraph:Canvas>

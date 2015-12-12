@@ -1,0 +1,50 @@
+@Ecore(invocationDelegates="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot", settingDelegates="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot", validationDelegates="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot")
+@namespace(uri="BD", prefix="BD")
+@gmf
+package BD;
+
+@Ecore(constraints="TablaNoDuplicado")
+@"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"(TablaNoDuplicado="
+			tablas->isUnique(nombre)")
+@gmf.diagram
+class EsquemaBD extends ElementoNombrado {
+  val Tabla[*] tablas;
+}
+
+@Ecore(constraints="ColumnaNoDuplicada NombreMayuscula")
+@"http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"(ColumnaNoDuplicada="
+			columnas->isUnique(nombre)", NombreMayuscula="
+			nombre.toUpperCase() = nombre")
+
+@gmf.node(label="nombre", label.placement = "internal", figure = "rectangle", label.icon = "false")
+class Tabla extends ElementoNombrado {
+@gmf.compartment(layout="list", collapsible="false")
+  val Columna[*] columnas;
+  ref Columna clavePrimaria;
+  val ClaveAjena[*] clavesAjenas;
+}
+
+@gmf.node(label="nombre,tipo", label.placement = "internal", figure = "rectangle", label.icon = "false",
+			label.pattern="{0}:{1}")
+class Columna extends ElementoNombrado {
+  attr TipoPrimitivo tipo;
+}
+
+enum TipoPrimitivo {
+  String = 0;
+  Integer = 1;
+  Double = 2;
+  Date = 3;
+  Boolean = 4;
+}
+
+class ElementoNombrado {
+  attr String nombre;
+}
+
+@gmf.link(source="columna", target="referencia", style="solid", width="2", target.decoration="arrow")
+class ClaveAjena {
+  ref Columna[1] columna;
+  ref Tabla[1] referencia;
+}
+
